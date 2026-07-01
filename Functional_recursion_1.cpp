@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int sum_of_N(int n)
+{
+   if(n==0){
+    return 0;
+   }
+   
+   return n + sum_of_N(n-1);
+
+}
+
+int main()
+{
+    int t;
+    cin >> t;
+    for(int i=0;i<t;i++)
+    {
+        int n;
+        cin >> n;
+        cout << sum_of_N(n);
+
+    }
+}
